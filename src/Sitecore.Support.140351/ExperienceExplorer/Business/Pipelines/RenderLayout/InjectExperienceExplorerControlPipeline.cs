@@ -72,7 +72,7 @@ namespace Sitecore.Support.ExperienceExplorer.Business.Pipelines.RenderLayout
                                 UserHelper.AuthentificateVirtualUser(Context.User.Name);
                             }
                         }
-                        if (Context.PageMode.IsPreview || Context.PageMode.IsPageEditor || Context.PageMode.IsDebugging)
+                        if (Context.PageMode.IsPreview || Context.PageMode.IsExperienceEditor || Context.PageMode.IsDebugging)
                         {
                             UserHelper.AuthentificateRealUser();
                         }
